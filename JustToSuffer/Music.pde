@@ -1,3 +1,5 @@
+Boolean play=false;
+//
 void musicSetup() {
   minim = new Minim(this); //loads from data directory, loadFile should also laod from project folder, like loadImage()
   //
