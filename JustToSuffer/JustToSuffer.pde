@@ -84,7 +84,7 @@ void draw() {
   textFont(font, size);
   text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
   //
-  musicDraw();
+  //musicDraw();
 }//End draw
 //
 void keyPressed() {
@@ -104,6 +104,8 @@ void mousePressed() {
   //
   if ( mouseX>=secondTextX && mouseX<=secondTextX+secondTextWidth && mouseY>=secondTextY && mouseY<=secondTextY+secondTextHeight ) canvas();  //paper=true;
   //
+  //
+  musicKeyPressed();
 }//End mousepressed
 //
 //End MAIN
