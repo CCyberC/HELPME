@@ -40,7 +40,7 @@ void population() {
   //
   vUpX = width*0; 
   vUpY = height*3/8+(height*1/8);;
-  vUPWidth = width*3/24; 
+  vUpWidth = width*3/24; 
   vUpHeight = height*1/24;
   //
   vDownX = width*3/24;
@@ -79,7 +79,7 @@ void population() {
   sprayHeight = height*1/8;
   //
   highlightX = width*2/9;
-  hightlightY = height*0;
+  highlightY = height*0;
   highlightWidth = width*1/9;
   highlightHeight = height*1/8;
   //
