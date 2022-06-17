@@ -29,44 +29,44 @@ void population() {
   rButtonHeight = height*1/8;
   //
   pagesX = width*0;
-  pagesY = height*1/8+(height*1/8);; 
+  pagesY = height*1/8+(height*1/8);  
   pagesWidth = width*6/24; 
   pagesHeight = height*1/8;
   //
   musicX = width*0;
-  musicY = height*2/8+(height*1/8);;
+  musicY = height*2/8+(height*1/8);
   musicWidth = width*6/24;
   musicHeight = height*1/8;
   //
   vUpX = width*0; 
-  vUpY = height*3/8+(height*1/8);;
+  vUpY = height*3/8+(height*1/8);
   vUpWidth = width*3/24; 
-  vUpHeight = height*1/24;
+  vUpHeight = height*1/16;
   //
   vDownX = width*3/24;
-  vDownY = height*4/8+(height*1/8);;
+  vDownY = height*3/8+(height*1/8);
   vDownWidth = width*3/24; 
-  vDownHeight = height*1/24;
+  vDownHeight = height*1/16;
   //
   previousX = width*0;
-  previousY = height*13/24+(height*1/8);;
+  previousY = height*7/16+(height*1/8);
   previousWidth = width*3/24;
-  previousHeight = height*1/24;
+  previousHeight = height*1/16;
   //
   nextX = width*3/24;
-  nextY = height*13/24+(height*1/8);;
+  nextY = height*7/16+(height*1/8);
   nextWidth = width*3/24;
-  nextHeight = height*1/24;
+  nextHeight = height*1/16;
   //
   replayX = width*0;
-  replayY = height*14/24+(height*1/8);; 
+  replayY = height*8/16+(height*1/8);
   replayWidth = width*3/24;
-  replayHeight = height*1/24;
+  replayHeight = height*1/16;
   //
   pX = width*3/24;
-  pY = height*14/24+(height*1/8);;
+  pY = height*8/16+(height*1/8);
   pWidth = width*3/24;
-  pHeight = height*1/24;
+  pHeight = height*1/16;
   //
   penX = width*0;
   penY = height*0;
