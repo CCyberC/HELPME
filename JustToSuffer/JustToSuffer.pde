@@ -3,6 +3,33 @@ Boolean draw=false;
 //
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
+float rButtonX, rButtonY, rButtonWidth, rButtonHeight;
+float pagesX, pagesY, pagesWidth, pagesHeight;
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+float 
+//
 int reset=1;
 color white=255, resetColour=white, red=#FF0303, black=0, quitButtonColour;
 //
