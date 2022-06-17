@@ -7,7 +7,7 @@ void hoverOver() {
     quitButtonColour = black;
   }//End Quit Button Hoverover
   fill(quitButtonColour);
-  noStroke(); //removes rect() outline
+  //noStroke(); //removes rect() outline
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   stroke(reset);
   fill(resetColour); //White, not night mode friendly
@@ -19,12 +19,24 @@ void hoverOver() {
   size = 20; //Change until fits
   textFont(font, size);
   text(quitButtonString, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
-  /*
-  if () {
-    
+  //
+  if ( mouseX>=rButtonX && mouseX<=rButtonX+rButtonWidth && mouseY>=rButtonY && mouseY<=rButtonY+rButtonHeight ) {
+    rButtonC = coWhite;
   } else {
-    
+    rButtonC = coLWhite;
   }
+  fill(rButtonC);
+  rect(rButtonX, rButtonY, rButtonWidth, rButtonHeight);
+  stroke(reset);
+  fill(resetColour);
+  //
+  fill(black);
+  textAlign (CENTER, CENTER);
+  size = 20;
+  textFont(font, size);
+  text(ruler, rButtonX, rButtonY, rButtonWidth, rButtonHeight);
+  //  
+  /*
   if () {
     
   } else {
