@@ -1,6 +1,34 @@
 float ItLX, ItLY, ItLW, ItLH;
 //
 void population() {
+  /*
+  img1 = loadImage(""); 
+  img2 = loadImage(""); 
+  img3 = loadImage("");
+  img4 = loadImage("");
+  img5 = loadImage("");
+  img6 = loadImage("");
+  img7 = loadImage("");
+  img8 = loadImage("");
+  img9 = loadImage("");
+  img10 = loadImage("");
+  img11 = loadImage("");
+  img12 = loadImage("");
+  img13 = loadImage("");
+  img14 = loadImage("");
+  img15 = loadImage("");
+  img16 = loadImage("");
+  img17 = loadImage("");
+  img18 = loadImage("");
+  */
+  img19 = loadImage("download-icon-close+cross+delete+exit+stop+warning+icon-1320191178031663161_512.png");
+  //
+  /*
+  img20 = loadImage("499-4998394_jpg-library-library-afro-transparent-coloring-page-coloring.png"); 
+  img21 = loadImage("17-172989_woman-coloring-pages-for-teens-girl-colouring-pages.png"); 
+  img22 = loadImage("259-2592527_coloring-printable-coloring-book-pages-line-artsy-free.png");
+  img23 = loadImage("55-552824_coloring-pages-printable-mandala-coloring-pages-book-mandala.png");
+  */
   //
   canvasX = width*6/24;
   canvasY = height*1/8;

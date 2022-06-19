@@ -53,6 +53,8 @@ color coRed=#E53A27, coOrange=#E8A944, coYellow=#E5E592, coPink=#E592DC, coCyan=
 color coLRed=#F26C5F, coLOrange=#EBB444, coLYellow=#E5F092, coLPink=#E596DC, coLCyan=#35E6F8, coLLightBlue=#CCEEFC, coLPurple=#675FA7, coLGrey=#CCCDCE, coLWhite=#F0F0F0, coLBlack=#404243;
 color quitButtonColour, rButtonC, pagesC, musicC, upC, downC, prevC, nexC, repC, pC, penC, sprayC, highlightC, circleC, eraserC, fillC, thinC, thickC, resetC, redC, orangeC, yellowC, pinkC, cyanC, blueC, purpleC, greyC, blackC, whiteC;
 //
+PImage img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23;
+//
 void setup() {
   //Mandatory: Mistaken display orientation should break app, feedback to console and CANVAS
   size(2500, 1500); //fullScreen, displayWidth, displayHeight
@@ -60,6 +62,9 @@ void setup() {
   textSetup();
   canvas();
   musicSetup();
+  //
+  imageSetup();
+  pagesImageSetup();
   //
 }//End setup
 //
@@ -73,6 +78,9 @@ void draw() {
   //
   //Quit Button Hoverover
   hoverOver();
+  //textHoverOver();
+  //
+  //pagesDraw();
   //
   //musicDraw();
 }//End draw
