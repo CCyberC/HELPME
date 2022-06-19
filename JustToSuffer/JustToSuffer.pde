@@ -13,7 +13,7 @@ AudioMetaData[] songMetaData = new AudioMetaData[numberOfSongs]; //"song1's meta
 int currentSong = numberOfSongs - numberOfSongs;
 PFont titleFont;
 //
-Boolean draw=false;
+Boolean Pen=false, Circle=false;
 //
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
@@ -73,8 +73,8 @@ void draw() {
   //if ( paper==true ) pieceOfPaper();
   //
   //Drawing Tools, with a combined Boolean
-  if ( draw==true && mouseX>=canvasX && mouseX<=canvasX+canvasWidth && mouseY>=canvasY && mouseY<=canvasY+canvasHeight ) line( mouseX, mouseY, pmouseX, pmouseY ) ;//End Line Draw
-  if ( draw==true && mouseX>=canvasX && mouseX<=canvasX+canvasWidth && mouseY>=canvasY && mouseY<=canvasY+canvasHeight ) ellipse ( mouseX, mouseY, circleDiameter, circleDiameter ); //Circle Drawing Tool
+  //if ( Pen==true && mouseX>=canvasX && mouseX<=canvasX+canvasWidth && mouseY>=canvasY && mouseY<=canvasY+canvasHeight ) line( mouseX, mouseY, pmouseX, pmouseY  ) ;//End Line Draw 
+  if ( Circle==true && mouseX>=canvasX && mouseX<=canvasX+canvasWidth && mouseY>=canvasY && mouseY<=canvasY+canvasHeight ) ellipse ( mouseX, mouseY, circleDiameter, circleDiameter ); //Circle Drawing Tool
   //
   //Quit Button Hoverover
   hoverOver();
@@ -83,6 +83,9 @@ void draw() {
   //pagesDraw();
   //
   //musicDraw();
+  //
+  penFunction();
+  //
 }//End draw
 //
 void keyPressed() {
@@ -90,21 +93,43 @@ void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() {
-  //Paper-Button
-  if (mouseX>=ItLX && mouseX<=ItLX+ItLW && mouseY>=ItLY && mouseY<=ItLY+ItLH ) {
-    if (draw == false) {
-      draw = true;
-    } else {
-      draw = false;
-    }//End draw Boolean
-  }//Button Paper (Drawing Surface)
   //
   if ( mouseX>=quitButtonX && mouseX<=quitButtonX+quitButtonWidth && mouseY>=quitButtonY && mouseY<=quitButtonY+quitButtonHeight ) exit();
   //
   if ( mouseX>=secondTextX && mouseX<=secondTextX+secondTextWidth && mouseY>=secondTextY && mouseY<=secondTextY+secondTextHeight ) canvas();  //paper=true;
   //
+  if ( mouseX>=penX && mouseX<=penX+penWidth && mouseY>=penY && mouseY<=penY+penHeight ) {
+    penFunction();
+  } else {
+    
+  }
   //
   
 }//End mousepressed
+//
+void mouseDragged() {
+  //
+  /*
+  if ( Pen==true && mouseX>=canvasX && mouseX<=canvasX+canvasWidth && mouseY>=canvasY && mouseY<=canvasY+canvasHeight ) line( mouseX, mouseY, pmouseX, pmouseY  ) ;//End Line Draw
+  //
+  if ( mouseX>=canvasX && mouseX<=canvasX+canvasWidth && mouseY>=canvasY && mouseY<=canvasY+canvasHeight ) {
+    if (Pen == false) {
+      Pen = true;
+    } else {
+      Pen = false;
+    }//End draw Boolean
+  }//Button Paper (Drawing Surface)
+  */
+  //
+  /*
+  if (mouseX>=ItLX && mouseX<=ItLX+ItLW && mouseY>=ItLY && mouseY<=ItLY+ItLH ) {
+    if (circle == false) {
+      circle = true;
+    } else {
+      circle = false;
+    }//End draw Boolean
+  }//Button Paper (Drawing Surface)
+  */
+}//End mouseDragged
 //
 //End MAIN

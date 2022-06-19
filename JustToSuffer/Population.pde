@@ -1,5 +1,3 @@
-float ItLX, ItLY, ItLW, ItLH;
-//
 void population() {
   /*
   img1 = loadImage(""); 
@@ -45,11 +43,6 @@ void population() {
   secondTextY = height*0;
   secondTextWidth = width*1/9;
   secondTextHeight = height*1/8;
-  //
-  ItLX = canvasX+(width*(12/24));
-  ItLY = canvasY+(height*(1.0/120.0));
-  ItLW = canvasWidth-(width*(1.0/48.0));
-  ItLH = canvasHeight-(height*(1.0/60.0));
   //
   rButtonX = width*0;
   rButtonY = height*1/8;
