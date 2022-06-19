@@ -2,7 +2,7 @@ void hoverOver() {
   if ( mouseX>=quitButtonX && mouseX<=quitButtonX+quitButtonWidth && mouseY>=quitButtonY && mouseY<=quitButtonY+quitButtonHeight ) {
     quitButtonColour = red;
   } else {
-    quitButtonColour = black;
+    quitButtonColour = coLWhite;
   }//End Quit Button Hoverover
   fill(quitButtonColour);
   //noStroke(); //removes rect() outline
@@ -289,6 +289,22 @@ void hoverOver() {
   size = 20;
   textFont(font, size);
   text(thick, thickX, thickY, thickWidth, thickHeight);
+  //
+  if ( mouseX>=secondTextX && mouseX<=secondTextX+secondTextWidth && mouseY>=secondTextY && mouseY<=secondTextY+secondTextHeight ) {
+    resetC = coWhite;
+  } else {
+    resetC = coLWhite;
+  }
+  fill(resetC);
+  rect(secondTextX, secondTextY, secondTextWidth, secondTextHeight);
+  stroke(reset);
+  fill(resetColour);
+  //
+  fill(black);
+  textAlign (CENTER, CENTER);
+  size = 20;
+  textFont(font, size);
+  text(resetTxt, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
   //
   if ( mouseX>=redX && mouseX<=redX+redWidth && mouseY>=redY && mouseY<=redY+redHeight ) {
     redC = coRed;

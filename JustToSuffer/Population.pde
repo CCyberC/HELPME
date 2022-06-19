@@ -41,32 +41,34 @@ void population() {
   vUpX = width*0; 
   vUpY = height*3/8+(height*1/8);
   vUpWidth = width*3/24; 
-  vUpHeight = height*1/16;
+  vUpHeight = height*1/12;
   //
   vDownX = width*3/24;
   vDownY = height*3/8+(height*1/8);
   vDownWidth = width*3/24; 
-  vDownHeight = height*1/16;
+  vDownHeight = height*1/12;
   //
   previousX = width*0;
-  previousY = height*7/16+(height*1/8);
+  previousY = height*7/12;
+  //previousY = height*8/16+(height*1/8);
   previousWidth = width*3/24;
-  previousHeight = height*1/16;
+  previousHeight = height*1/12;
   //
   nextX = width*3/24;
-  nextY = height*7/16+(height*1/8);
+  nextY = height*7/12;
   nextWidth = width*3/24;
-  nextHeight = height*1/16;
+  nextHeight = height*1/12;
   //
   replayX = width*0;
-  replayY = height*8/16+(height*1/8);
+  replayY = height*2/3;
+  //replayY = height*9/16+(height*1/8);
   replayWidth = width*3/24;
-  replayHeight = height*1/16;
+  replayHeight = height*1/12;
   //
   pX = width*3/24;
-  pY = height*8/16+(height*1/8);
+  pY = height*2/3;
   pWidth = width*3/24;
-  pHeight = height*1/16;
+  pHeight = height*1/12;
   //
   penX = width*0;
   penY = height*0;

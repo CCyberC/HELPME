@@ -48,10 +48,10 @@ float blackX, blackY, blackWidth, blackHeight;
 int reset=1;
 color white=255, resetColour=white, red=#FF0303, black=0;
 //
-color coRed=#E53A27, coOrange=#E8A944, coYellow=#E5E592, coPink=#E592DC, coCyan=#35FAF8, coLightBlue=#CEDEE5, coPurple=#6755A7, coGrey=#B2B7B9, coWhite=#EDF1F2, coBlack=#404243;
+color coRed=#E53A27, coOrange=#E8A944, coYellow=#E5E592, coPink=#E592DC, coCyan=#35FAF8, coLightBlue=#CEDEE5, coPurple=#6755A7, coGrey=#B2B7B9, coWhite=#EDF1F2, coBlack=#4A3839;
 //
-color coLRed=#F26C5F, coLOrange=#EBB444, coLYellow=#E5F092, coLPink=#E596DC, coLCyan=#35E6F8, coLLightBlue=#CCEEFC, coLPurple=#675FA7, coLGrey=#CCCDCE, coLWhite=#F0F0F0, coLBlack=#4A3839;
-color quitButtonColour, rButtonC, pagesC, musicC, upC, downC, prevC, nexC, repC, pC, penC, sprayC, highlightC, circleC, eraserC, fillC, thinC, thickC, redC, orangeC, yellowC, pinkC, cyanC, blueC, purpleC, greyC, blackC, whiteC;
+color coLRed=#F26C5F, coLOrange=#EBB444, coLYellow=#E5F092, coLPink=#E596DC, coLCyan=#35E6F8, coLLightBlue=#CCEEFC, coLPurple=#675FA7, coLGrey=#CCCDCE, coLWhite=#F0F0F0, coLBlack=#404243;
+color quitButtonColour, rButtonC, pagesC, musicC, upC, downC, prevC, nexC, repC, pC, penC, sprayC, highlightC, circleC, eraserC, fillC, thinC, thickC, resetC, redC, orangeC, yellowC, pinkC, cyanC, blueC, purpleC, greyC, blackC, whiteC;
 //
 void setup() {
   //Mandatory: Mistaken display orientation should break app, feedback to console and CANVAS
@@ -74,20 +74,11 @@ void draw() {
   //Quit Button Hoverover
   hoverOver();
   //
-  //Second Rectangle with More Text
-  fill(white); 
-  rect(secondTextX, secondTextY, secondTextWidth, secondTextHeight);
-  fill(black); //Ink
-  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
-  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  size = 13; //Change until fits
-  textFont(font, size);
-  text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
-  //
   //musicDraw();
 }//End draw
 //
 void keyPressed() {
+  musicKeyPressed();
 }//End keyPressed
 //
 void mousePressed() {
@@ -105,7 +96,7 @@ void mousePressed() {
   if ( mouseX>=secondTextX && mouseX<=secondTextX+secondTextWidth && mouseY>=secondTextY && mouseY<=secondTextY+secondTextHeight ) canvas();  //paper=true;
   //
   //
-  musicKeyPressed();
+  
 }//End mousepressed
 //
 //End MAIN

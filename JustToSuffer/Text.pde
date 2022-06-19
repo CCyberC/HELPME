@@ -20,6 +20,7 @@ String eraser = "Eraser";
 String fill = "Bucket";
 String thin = "Thin";
 String thick = "Thick";
+String resetTxt = "Reset";
 String red2 = "Red";
 String orange = "Orange";
 String yellow = "Yellow";
