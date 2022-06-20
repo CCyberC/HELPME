@@ -9,14 +9,14 @@ void population() {
   img8 = loadImage("0jE3eN-diagonal-thick-line-image-png.png");
   img9 = loadImage("Page-PNG-HD.png");
   img10 = loadImage("ruler-geometry-mathematics-image-pixabay-1.png");
-  img11 = loadImage(".png");
-  img12 = loadImage(".png");
-  img13 = loadImage(".png");
-  img14 = loadImage(".png");
-  img15 = loadImage(".png");
-  img16 = loadImage(".png");
-  img17 = loadImage(".png");
-  img18 = loadImage(".png");
+  img11 = loadImage("d4d3c02f855019b7357b6c46da2124da.jpg");
+  img12 = loadImage("download.png");
+  img13 = loadImage("25695.png");
+  img14 = loadImage("Media-Controls-Volume-Down-icon.png");
+  img15 = loadImage("skip-icon-18.png");
+  img16 = loadImage("4028990.png");
+  img17 = loadImage("1142347.png");
+  img18 = loadImage("27185.png");
   img19 = loadImage("download-icon-close+cross+delete+exit+stop+warning+icon-1320191178031663161_512.png");
   //
   /*
