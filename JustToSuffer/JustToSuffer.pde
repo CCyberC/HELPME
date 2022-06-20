@@ -78,9 +78,8 @@ void draw() {
   //if ( Pen==true && mouseX>=canvasX && mouseX<=canvasX+canvasWidth && mouseY>=canvasY && mouseY<=canvasY+canvasHeight ) line( mouseX, mouseY, pmouseX, pmouseY  ) ;//End Line Draw 
   if ( Circle==true && mouseX>=canvasX && mouseX<=canvasX+canvasWidth && mouseY>=canvasY && mouseY<=canvasY+canvasHeight ) ellipse ( mouseX, mouseY, circleDiameter, circleDiameter ); //Circle Drawing Tool
   //
-  //Quit Button Hoverover
   hoverOver();
-  //textHoverOver();
+  textHoverOver();
   //
   //pagesDraw();
   //
