@@ -398,9 +398,9 @@ void imageSetup() {
   imgY18 = pY;
   imgWidth18 = pWidth;
   imgHeight18 = pHeight;
-  imgX19 = quitButtonX;
+  imgX19 = quitButtonX+(quitButtonWidth*1/4);
   imgY19 = quitButtonY;
-  imgWidth19 = quitButtonWidth;
+  imgWidth19 = quitButtonWidth*1/2;
   imgHeight19 = quitButtonHeight;
   //
   WA1 = imgWidth1 * imgWR1;
