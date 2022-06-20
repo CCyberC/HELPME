@@ -1,4 +1,24 @@
-Boolean play=false;
+Boolean play=false, musicButton=false;
+//
+void musicDrawMB() {
+  /*
+  if ( musicButton == true ) {
+    noStroke();
+    rect(musicMBX, musicMBY, musicMBW, musicMBH);
+    //
+    image(); //
+    //
+    image(); //
+    //
+    image(); //
+    //
+    image(); // 
+    //
+    fill(white);
+    stroke(reset);
+  }
+  */
+}//End 
 //
 void musicSetup() {
   minim = new Minim(this); //loads from data directory, loadFile should also laod from project folder, like loadImage()
@@ -85,7 +105,7 @@ void musicKeyPressed() {
    if ( key=='l' || key=='L' ) song1.loop(loopNum);
    */
   //
-  if ( key=='m' || key=='M' ) { //Mute Buttin
+  if ( key=='m' || key=='M' ) { //Mute Button
     if ( song[currentSong].isMuted() ) {
       song[currentSong].unmute();
     } else {
@@ -133,4 +153,62 @@ void musicKeyPressed() {
       song[currentSong].play();
     }
   }//End Previous Button
-}//End musicKeyPressed
+}//End music keyPressed
+//
+void musicMousePressed() {
+  //PREVIOUS Button
+  if ( key=='b' || key=='B' ) {
+    if ( song[currentSong].isPlaying() ) {
+      song[currentSong].pause();
+      song[currentSong].rewind();
+      backButtonArrayCatch();
+      song[currentSong].play();
+    } else {
+      song[currentSong].rewind();
+      backButtonArrayCatch();
+      song[currentSong].play();
+    }
+  }//End PREVIOUS Button
+  //
+  //NEXT Button
+  if ( key=='n' || key=='N' ) {
+    if ( song[currentSong].isPlaying() ) {
+      //Serious Problem: playing multiple songs at the same time
+      //Built-in Pause feature or STOP feature
+      song[currentSong].pause();
+      song[currentSong].rewind();
+      nextButtonArrayCatch();
+      song[currentSong].play();
+    } else {
+      song[currentSong].rewind(); //Built-in rewind feature so all songs start at zero
+      nextButtonArrayCatch();
+      //Error if >3/Called a catch/CATCH ArrayIndexOutOfBoundsException: Error if currentSong>3
+      song[currentSong].play();
+    }
+  } //End NEXT Button
+  //
+  //STOP Button
+  if ( key=='s' || key=='S' ) { //STOP Button
+    if ( song[currentSong].isPlaying() ) {
+      song[currentSong].pause();
+      song[currentSong].rewind();
+      //
+    } else {
+      song[currentSong].rewind();
+    }
+  } //End STOP Button
+  //
+  //PLAY/PAUSE BUTTON
+  if ( key=='p' || key=='P' ) {
+    if ( song[currentSong].isPlaying() ) {
+      song[currentSong].pause();
+    } else if ( song[currentSong].position() >= song[currentSong].length()-song[currentSong].length()*1/5 ) {
+      song[currentSong].rewind();
+      song[currentSong].play();
+    } else {
+      song[currentSong].play();
+    }
+  }//End PLAY/PAUSE Button
+  //
+}//End musicMousePressed
+  

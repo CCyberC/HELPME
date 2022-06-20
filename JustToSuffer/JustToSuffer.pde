@@ -15,6 +15,8 @@ PFont titleFont;
 //
 Boolean Pen=false, Circle=false;
 //
+float musicMBX, musicMBY, musicMBW, musicMBH;
+//
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
 float rButtonX, rButtonY, rButtonWidth, rButtonHeight;
@@ -82,9 +84,9 @@ void draw() {
   //
   //pagesDraw();
   //
-  //musicDraw();
+  //musicDraw(); //this is for the text that states what song is playing
   //
-  penFunction();
+  penFunction(); //unslash this once buttons are done
   //
 }//End draw
 //

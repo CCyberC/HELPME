@@ -28,6 +28,11 @@ void population() {
   img23 = loadImage("55-552824_coloring-pages-printable-mandala-coloring-pages-book-mandala.png");
   */
   //
+  musicMBX = vUpX;
+  musicMBY = vUpY;
+  musicMBW = musicWidth;
+  musicMBH = height*2/8;
+  //
   canvasX = width*6/24;
   canvasY = height*1/8;
   canvasWidth = width*18/24;
