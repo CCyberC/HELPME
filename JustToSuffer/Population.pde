@@ -1,24 +1,22 @@
 void population() {
-  /*
-  img1 = loadImage(""); 
-  img2 = loadImage(""); 
-  img3 = loadImage("");
-  img4 = loadImage("");
-  img5 = loadImage("");
-  img6 = loadImage("");
-  img7 = loadImage("");
-  img8 = loadImage("");
-  img9 = loadImage("");
-  img10 = loadImage("");
-  img11 = loadImage("");
-  img12 = loadImage("");
-  img13 = loadImage("");
-  img14 = loadImage("");
-  img15 = loadImage("");
-  img16 = loadImage("");
-  img17 = loadImage("");
-  img18 = loadImage("");
-  */
+  img1 = loadImage("pen_PNG7418.png"); 
+  img2 = loadImage("spray-can-png-2.png"); 
+  img3 = loadImage("0a3fddb8fdf07b7c1f42a371d420c3f2-yellow-highlighter-flat.png");
+  img4 = loadImage("500px-Circle_-_black_simple.svg.png");
+  img5 = loadImage("eraser_PNG1.png");
+  img6 = loadImage("226-2261605_paint-can-png.png");
+  img7 = loadImage("Horizontal-Line-PNG-Cutout.png");
+  img8 = loadImage("0jE3eN-diagonal-thick-line-image-png.png");
+  img9 = loadImage("Page-PNG-HD.png");
+  img10 = loadImage("ruler-geometry-mathematics-image-pixabay-1.png");
+  img11 = loadImage(".png");
+  img12 = loadImage(".png");
+  img13 = loadImage(".png");
+  img14 = loadImage(".png");
+  img15 = loadImage(".png");
+  img16 = loadImage(".png");
+  img17 = loadImage(".png");
+  img18 = loadImage(".png");
   img19 = loadImage("download-icon-close+cross+delete+exit+stop+warning+icon-1320191178031663161_512.png");
   //
   /*

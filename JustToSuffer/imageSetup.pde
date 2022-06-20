@@ -16,15 +16,44 @@ float WA20, HA20, WA21, HA21, WA22, HA22, WA23, HA23;
 //
 
 void imageSetup() {
-  /*
-  int img1W = 820; 
-  int img1H = 971; 
-  int img2W = 860; 
-  int img2H = 1121; 
-  int img3W = 860; 
-  int img3H = 1076; 
-  int img4W = 860; 
-  int img4H = 900; 
+  int img1W = 1214; 
+  int img1H = 1214; 
+  int img2W = 256; 
+  int img2H = 256; 
+  int img3W = 512; 
+  int img3H = 512; 
+  int img4W = 500; 
+  int img4H = 500; 
+  int img5W = 483; 
+  int img5H = 450; 
+  int img6W = 818; 
+  int img6H = 894; 
+  int img7W = 480; 
+  int img7H = 480; 
+  int img8W = 400; 
+  int img8H = 400; 
+  int img9W = 733; 
+  int img9H = 720; 
+  int img10W = 960; 
+  int img10H = 320; 
+  int img11W = ;
+  int img11H = ; 
+  int img12W = ; 
+  int img12H = ; 
+  int img13W = ; 
+  int img13H = ; 
+  int img14W = ; 
+  int img14H = ; 
+  int img15W = ; 
+  int img15H = ; 
+  int img16W = ; 
+  int img16H = ;  
+  int img17W = ;  
+  int img17H = ; 
+  int img18W = ; 
+  int img18H = ;  
+  int img19W = ; 
+  int img19H = ; 
   //
   if ( img1H >= img1W ) { //ID Larger Dimension: Portrait
     larger1D = img1H;
@@ -108,7 +137,6 @@ void imageSetup() {
   HA3 = imgHeight3 * imgHR3;
   WA4 = imgWidth4 * imgWR4;
   HA4 = imgHeight4 * imgHR4;
-  */
 }//End imageSetup
 //
 void pagesImageSetup() {
