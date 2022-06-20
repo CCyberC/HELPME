@@ -91,7 +91,7 @@ void draw() {
 }//End draw
 //
 void keyPressed() {
-  musicKeyPressed();
+  //musicKeyPressed();
 }//End keyPressed
 //
 void mousePressed() {
@@ -106,7 +106,8 @@ void mousePressed() {
     
   }
   //
-  
+  musicMousePressed();
+  //
 }//End mousepressed
 //
 void mouseDragged() {

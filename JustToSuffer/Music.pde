@@ -60,6 +60,7 @@ void musicDraw() {
   fill(255); //Reset to white for rest of the program
 }//End musicDraw
 //
+/*
 void musicKeyPressed() {
   if ( key=='1' || key=='9') {
     //Note: "9" is assumed as massive. "Simulate Infinite"
@@ -74,13 +75,11 @@ void musicKeyPressed() {
   //
   if ( key>='2' && key!='9' ) println("I do not loop that high. Try again.");
   //
-  /*
   //Only press a number for the code below
-   String keyStr = String.valueOf(key);
-   println("Number of Repeats is", keyStr);
-   int num = int(keyStr);
-   song1.loop(num);
-   */
+   //String keyStr = String.valueOf(key);
+   //println("Number of Repeats is", keyStr);
+   //int num = int(keyStr);
+   //song1.loop(num);
   //
   //Alternate Play/Pause Button
   if ( key=='p' || key=='P' ) {
@@ -99,11 +98,10 @@ void musicKeyPressed() {
   if ( key=='f' || key=='F' ) song[currentSong].skip(1000); //skip forward 1 second (1000 milliseconds)
   if ( key=='r' || key=='R' ) song[currentSong].skip(-1000); //skip backward, or reverse, 1 second (1000 milliseconds)
   //
-  /* Previous Play Button and Loop Button
-   int loopNum = 2; //Local Variables plays once and loops twice
+  // Previous Play Button and Loop Button
+   //int loopNum = 2; //Local Variables plays once and loops twice
    //song1.play(); //Parameter is milli-seconds from start of audio file to start fo playing
-   if ( key=='l' || key=='L' ) song1.loop(loopNum);
-   */
+   //if ( key=='l' || key=='L' ) song1.loop(loopNum);
   //
   if ( key=='m' || key=='M' ) { //Mute Button
     if ( song[currentSong].isMuted() ) {
@@ -154,13 +152,9 @@ void musicKeyPressed() {
     }
   }//End Previous Button
 }//End music keyPressed
+*/
 //
 void musicMousePressed() {
-  String keystr = String.valueOf(key);
-  println("Number of Repeats is", keystr);
-  int num = int(keystr);
-  song[currentSong].loop(num);
-  //
   //PREVIOUS Button
   if ( mouseX>=previousX && mouseX<=previousX+previousWidth && mouseY>=previousY && mouseY<=previousY+previousHeight ) { //if ( key=='b' || key=='B' ) {
     if ( song[currentSong].isPlaying() ) {
