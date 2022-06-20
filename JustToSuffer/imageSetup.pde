@@ -55,45 +55,195 @@ void imageSetup() {
   int img19W = 512; 
   int img19H = 512; 
   //
-  if ( img1H >= img1W ) { //ID Larger Dimension: Portrait
-    larger1D = img1H;
-    smaller1D = img1W;
-    h1Larger = true;
-  } else { //ID Larger Dimension: Landscape and Square
+  if ( img1W >= img1H ) { //ID Larger Dimension: Landscape and Square
     larger1D = img1W;
     smaller1D = img1H;
     w1Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger1D = img1H;
+    smaller1D = img1W;
+    h1Larger = true;
   } //End pic1 larger dimension ID
   //
-  if ( img2H >= img2W ) { //ID Larger Dimension: Portrait
-    larger2D = img2H;
-    smaller2D = img2W;
-    h2Larger = true;
-  } else { //ID Larger Dimension: Landscape and Square
+  if ( img2W >= img2H ) { //ID Larger Dimension: Landscape and Square
     larger2D = img2W;
     smaller2D = img2H;
     w2Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger2D = img2H;
+    smaller2D = img2W;
+    h2Larger = true;
   } //End pic2 larger dimension ID
   //
-  if ( img3H >= img3W ) { //ID Larger Dimension: Portrait
-    larger3D = img3H;
-    smaller3D = img3W;
-    h3Larger = true;
-  } else { //ID Larger Dimension: Landscape and Square
+  if ( img3W >= img3H ) { //ID Larger Dimension: Landscape and Square
     larger3D = img3W;
     smaller3D = img3H;
     w3Larger = true;
-  } //End pic4 larger dimension ID
+  } else { //ID Larger Dimension: Portrait
+    larger3D = img3H;
+    smaller3D = img3W;
+    h3Larger = true;
+  } //End pic3 larger dimension ID
   //
-  if ( img4H >= img4W ) { //ID Larger Dimension: Portrait
-    larger4D = img4H;
-    smaller4D = img4W;
-    h4Larger = true;
-  } else { //ID Larger Dimension: Landscape and Square
+  if ( img4W >= img4H ) { //ID Larger Dimension: Landscape and Square
     larger4D = img4W;
     smaller4D = img4H;
     w4Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger4D = img4H;
+    smaller4D = img4W;
+    h4Larger = true;
   } //End pic4 larger dimension ID
+  //
+  if ( img5W >= img5H ) { //ID Larger Dimension: Landscape and Square
+    larger5D = img5W;
+    smaller5D = img5H;
+    w5Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger5D = img5H;
+    smaller5D = img5W;
+    h5Larger = true;
+  } //End pic5 larger dimension ID
+  //
+  if ( img6H >= img6W ) { //ID Larger Dimension: Portrait
+    larger6D = img6H;
+    smaller6D = img6W;
+    h6Larger = true;
+  } else { //ID Larger Dimension: Landscape and Square
+    larger6D = img6W;
+    smaller6D = img6H;
+    w6Larger = true;
+  } //End pic6 larger dimension ID
+  //
+  if ( img7W >= img7H ) { //ID Larger Dimension: Landscape and Square
+    larger7D = img7W;
+    smaller7D = img7H;
+    w7Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger7D = img7H;
+    smaller7D = img7W;
+    h7Larger = true;
+  } //End pic7 larger dimension ID
+  //
+  if ( img8W >= img8H ) { //ID Larger Dimension: Landscape and Square
+    larger8D = img8W;
+    smaller8D = img8H;
+    w8Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger8D = img8H;
+    smaller8D = img8W;
+    h8Larger = true;
+  } //End pic8 larger dimension ID
+  //
+  if ( img9W >= img9H ) { //ID Larger Dimension: Landscape and Square
+    larger9D = img9W;
+    smaller9D = img9H;
+    w9Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger9D = img9H;
+    smaller9D = img9W;
+    h9Larger = true;
+  } //End pic9 larger dimension ID
+  //
+  if ( img10W >= img10H ) { //ID Larger Dimension: Landscape and Square
+    larger10D = img10W;
+    smaller10D = img10H;
+    w10Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger10D = img10H;
+    smaller10D = img10W;
+    h10Larger = true;
+  } //End pic10 larger dimension ID
+  //
+  if ( img11W >= img11H ) { //ID Larger Dimension: Landscape and Square
+    larger11D = img11W;
+    smaller11D = img11H;
+    w11Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger11D = img11H;
+    smaller11D = img11W;
+    h11Larger = true;
+  } //End pic11 larger dimension ID
+  //
+  if ( img12W >= img12H ) { //ID Larger Dimension: Landscape and Square
+    larger12D = img12W;
+    smaller12D = img12H;
+    w12Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger12D = img12H;
+    smaller12D = img12W;
+    h12Larger = true;
+  } //End pic12 larger dimension ID
+  //
+  if ( img13W >= img13H ) { //ID Larger Dimension: Landscape and Square
+    larger13D = img13W;
+    smaller13D = img13H;
+    w13Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger13D = img13H;
+    smaller13D = img13W;
+    h13Larger = true;
+  } //End pic13 larger dimension ID
+  //
+  if ( img14W >= img14H ) { //ID Larger Dimension: Landscape and Square
+    larger14D = img14W;
+    smaller14D = img14H;
+    w14Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger14D = img14H;
+    smaller14D = img14W;
+    h14Larger = true;
+  } //End pic14 larger dimension ID
+  //
+  if ( img15W >= img15H ) { //ID Larger Dimension: Landscape and Square
+    larger15D = img15W;
+    smaller15D = img15H;
+    w15Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger15D = img15H;
+    smaller15D = img15W;
+    h15Larger = true;
+  } //End pic1 larger dimension ID
+  //
+  if ( img16W >= img16H ) { //ID Larger Dimension: Landscape and Square
+    larger16D = img16W;
+    smaller16D = img16H;
+    w16Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger16D = img16H;
+    smaller16D = img16W;
+    h16Larger = true;
+  } //End pic16 larger dimension ID
+  //
+  if ( img17W >= img17H ) { //ID Larger Dimension: Landscape and Square
+    larger17D = img17W;
+    smaller17D = img17H;
+    w17Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger17D = img17H;
+    smaller17D = img17W;
+    h17Larger = true;
+  } //End pic17 larger dimension ID
+  //
+  if ( img18W >= img18H ) { //ID Larger Dimension: Landscape and Square
+    larger18D = img18W;
+    smaller18D = img18H;
+    w18Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger18D = img18H;
+    smaller18D = img18W;
+    h18Larger = true;
+  } //End pic18 larger dimension ID
+  //
+  if ( img19W >= img19H ) { //ID Larger Dimension: Landscape and Square
+    larger19D = img19W;
+    smaller19D = img19H;
+    w19Larger = true;
+  } else { //ID Larger Dimension: Portrait
+    larger19D = img19H;
+    smaller19D = img19W;
+    h19Larger = true;
+  } //End pic19 larger dimension ID
   //
   if ( w1Larger == true ) imgWR1 = float (larger1D) / float (larger1D);
   if ( w1Larger == true ) imgHR1 = float (smaller1D) / float (larger1D);
@@ -111,6 +261,66 @@ void imageSetup() {
   if ( w4Larger == true ) imgHR4 = float (smaller4D) / float (larger4D);
   if ( h4Larger == true ) imgWR4 = float (smaller4D) / float (larger4D);
   if ( h4Larger == true ) imgHR4 = float (larger4D) / float (larger4D);
+  if ( w1Larger == true ) imgWR1 = float (larger1D) / float (larger1D);
+  if ( w1Larger == true ) imgHR1 = float (smaller1D) / float (larger1D);
+  if ( h1Larger == true ) imgWR1 = float (smaller1D) / float (larger1D);
+  if ( h1Larger == true ) imgHR1 = float (larger1D) / float (larger1D);
+  if ( w2Larger == true ) imgWR2 = float (larger2D) / float (larger2D);
+  if ( w2Larger == true ) imgHR2 = float (smaller2D) / float (larger2D);
+  if ( h2Larger == true ) imgWR2 = float (smaller2D) / float (larger2D);
+  if ( h2Larger == true ) imgHR2 = float (larger2D) / float (larger2D);
+  if ( w3Larger == true ) imgWR3 = float (larger3D) / float (larger3D);
+  if ( w3Larger == true ) imgHR3 = float (smaller3D) / float (larger3D);
+  if ( h3Larger == true ) imgWR3 = float (smaller3D) / float (larger3D);
+  if ( h3Larger == true ) imgHR3 = float (larger3D) / float (larger3D);
+  if ( w4Larger == true ) imgWR4 = float (larger4D) / float (larger4D);
+  if ( w4Larger == true ) imgHR4 = float (smaller4D) / float (larger4D);
+  if ( h4Larger == true ) imgWR4 = float (smaller4D) / float (larger4D);
+  if ( h4Larger == true ) imgHR4 = float (larger4D) / float (larger4D);
+  if ( w1Larger == true ) imgWR1 = float (larger1D) / float (larger1D);
+  if ( w1Larger == true ) imgHR1 = float (smaller1D) / float (larger1D);
+  if ( h1Larger == true ) imgWR1 = float (smaller1D) / float (larger1D);
+  if ( h1Larger == true ) imgHR1 = float (larger1D) / float (larger1D);
+  if ( w2Larger == true ) imgWR2 = float (larger2D) / float (larger2D);
+  if ( w2Larger == true ) imgHR2 = float (smaller2D) / float (larger2D);
+  if ( h2Larger == true ) imgWR2 = float (smaller2D) / float (larger2D);
+  if ( h2Larger == true ) imgHR2 = float (larger2D) / float (larger2D);
+  if ( w3Larger == true ) imgWR3 = float (larger3D) / float (larger3D);
+  if ( w3Larger == true ) imgHR3 = float (smaller3D) / float (larger3D);
+  if ( h3Larger == true ) imgWR3 = float (smaller3D) / float (larger3D);
+  if ( h3Larger == true ) imgHR3 = float (larger3D) / float (larger3D);
+  if ( w4Larger == true ) imgWR4 = float (larger4D) / float (larger4D);
+  if ( w4Larger == true ) imgHR4 = float (smaller4D) / float (larger4D);
+  if ( h4Larger == true ) imgWR4 = float (smaller4D) / float (larger4D);
+  if ( h4Larger == true ) imgHR4 = float (larger4D) / float (larger4D);
+  if ( w1Larger == true ) imgWR1 = float (larger1D) / float (larger1D);
+  if ( w1Larger == true ) imgHR1 = float (smaller1D) / float (larger1D);
+  if ( h1Larger == true ) imgWR1 = float (smaller1D) / float (larger1D);
+  if ( h1Larger == true ) imgHR1 = float (larger1D) / float (larger1D);
+  if ( w2Larger == true ) imgWR2 = float (larger2D) / float (larger2D);
+  if ( w2Larger == true ) imgHR2 = float (smaller2D) / float (larger2D);
+  if ( h2Larger == true ) imgWR2 = float (smaller2D) / float (larger2D);
+  if ( h2Larger == true ) imgHR2 = float (larger2D) / float (larger2D);
+  if ( w3Larger == true ) imgWR3 = float (larger3D) / float (larger3D);
+  if ( w3Larger == true ) imgHR3 = float (smaller3D) / float (larger3D);
+  if ( h3Larger == true ) imgWR3 = float (smaller3D) / float (larger3D);
+  if ( h3Larger == true ) imgHR3 = float (larger3D) / float (larger3D);
+  if ( w4Larger == true ) imgWR4 = float (larger4D) / float (larger4D);
+  if ( w4Larger == true ) imgHR4 = float (smaller4D) / float (larger4D);
+  if ( h4Larger == true ) imgWR4 = float (smaller4D) / float (larger4D);
+  if ( h4Larger == true ) imgHR4 = float (larger4D) / float (larger4D);
+  if ( w1Larger == true ) imgWR1 = float (larger1D) / float (larger1D);
+  if ( w1Larger == true ) imgHR1 = float (smaller1D) / float (larger1D);
+  if ( h1Larger == true ) imgWR1 = float (smaller1D) / float (larger1D);
+  if ( h1Larger == true ) imgHR1 = float (larger1D) / float (larger1D);
+  if ( w2Larger == true ) imgWR2 = float (larger2D) / float (larger2D);
+  if ( w2Larger == true ) imgHR2 = float (smaller2D) / float (larger2D);
+  if ( h2Larger == true ) imgWR2 = float (smaller2D) / float (larger2D);
+  if ( h2Larger == true ) imgHR2 = float (larger2D) / float (larger2D);
+  if ( w3Larger == true ) imgWR3 = float (larger3D) / float (larger3D);
+  if ( w3Larger == true ) imgHR3 = float (smaller3D) / float (larger3D);
+  if ( h3Larger == true ) imgWR3 = float (smaller3D) / float (larger3D);
+  if ( h3Larger == true ) imgHR3 = float (larger3D) / float (larger3D);
   //
   imgX1 = canvasX+(canvasWidth*(1.0/24.0));
   imgY1 = canvasY;
