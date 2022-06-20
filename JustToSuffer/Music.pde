@@ -156,8 +156,13 @@ void musicKeyPressed() {
 }//End music keyPressed
 //
 void musicMousePressed() {
+  String keystr = String.valueOf(key);
+  println("Number of Repeats is", keystr);
+  int num = int(keystr);
+  song[currentSong].loop(num);
+  //
   //PREVIOUS Button
-  if ( key=='b' || key=='B' ) {
+  if ( mouseX>=previousX && mouseX<=previousX+previousWidth && mouseY>=previousY && mouseY<=previousY+previousHeight ) { //if ( key=='b' || key=='B' ) {
     if ( song[currentSong].isPlaying() ) {
       song[currentSong].pause();
       song[currentSong].rewind();
@@ -171,7 +176,7 @@ void musicMousePressed() {
   }//End PREVIOUS Button
   //
   //NEXT Button
-  if ( key=='n' || key=='N' ) {
+  if ( mouseX>=nextX && mouseX<=nextX+nextWidth && mouseY>=nextY && mouseY<=nextY+nextHeight ) { //if ( key=='n' || key=='N' ) {
     if ( song[currentSong].isPlaying() ) {
       //Serious Problem: playing multiple songs at the same time
       //Built-in Pause feature or STOP feature
@@ -188,7 +193,7 @@ void musicMousePressed() {
   } //End NEXT Button
   //
   //STOP Button
-  if ( key=='s' || key=='S' ) { //STOP Button
+  if ( mouseX>=replayX && mouseX<=replayX+replayWidth && mouseY>=replayY && mouseY<=replayY+replayHeight ) { //if ( key=='s' || key=='S' ) {
     if ( song[currentSong].isPlaying() ) {
       song[currentSong].pause();
       song[currentSong].rewind();
@@ -199,7 +204,7 @@ void musicMousePressed() {
   } //End STOP Button
   //
   //PLAY/PAUSE BUTTON
-  if ( key=='p' || key=='P' ) {
+  if ( mouseX>=pX && mouseX<=pX+pWidth && mouseY>=pY && mouseY<=pY+pHeight ) { //if ( key=='p' || key=='P' ) {
     if ( song[currentSong].isPlaying() ) {
       song[currentSong].pause();
     } else if ( song[currentSong].position() >= song[currentSong].length()-song[currentSong].length()*1/5 ) {
